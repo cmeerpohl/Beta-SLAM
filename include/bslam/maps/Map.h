@@ -84,10 +84,10 @@ public:
 	inline	const Cell&			cellOrUnknown( const MapPoint &p ) const	{ 	return cell( p ); }
 
 	template<typename CellOut = Cell>
-	inline	CellList<CellOut>	cells() const								{	return m_storage.cells<CellOut>(); }
+	inline	CellList<CellOut>	cells() const								{	return m_storage.template cells<CellOut>(); }
 	template<typename CellOut = Cell>
 	inline	CellList<CellOut>	cells( const CellSelectionFunction<Cell> &selectionFunction ) const
-																			{	return m_storage.cells<CellOut>( selectionFunction ); }
+																			{	return m_storage.template cells<CellOut>( selectionFunction ); }
 
 	inline	uint32_t			prune()										{	return m_storage.prune(); }
 

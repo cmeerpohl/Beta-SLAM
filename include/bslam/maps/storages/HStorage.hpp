@@ -167,7 +167,7 @@ HierarchicalStorage<Cell, Storage, Magnitude>::cells( const CellSelectionFunctio
 		size_t patchIdx = HierarchicalStorageHelper<Dimension>::patchIndex( *patchIter, m_size, Magnitude );
 		if( m_patches[patchIdx] ) {
 			// Append patch's cells to result
-			res.splice( res.end(), m_patches[patchIdx]->cells<CellOut>( selectionFunction, *patchIter ) );
+			res.splice( res.end(), m_patches[patchIdx]->template cells<CellOut>( selectionFunction, *patchIter ) );
 		}
 	}
 

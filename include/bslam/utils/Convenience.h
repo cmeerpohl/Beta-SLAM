@@ -38,6 +38,7 @@
 #include <string>
 #include <functional>
 #include <cctype>
+#include <cmath>
 
 
 namespace bslam {

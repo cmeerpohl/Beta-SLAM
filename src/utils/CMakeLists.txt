@@ -15,5 +15,8 @@ ADD_LIBRARY( bslam-utils SHARED ${BSLAM_UTILS_SRSC} )
 ADD_DEPENDENCIES( bslam-utils VersionInfo )
 #ADD_DEPENDENCIES( bslam-utils-static VersionInfo )
 
+target_include_directories( bslam-utils  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../include/ )
+
 target_link_libraries( bslam-utils  ${BSLAM_ROS_LIBS} )
+
 #target_link_libraries( bslam-utils-static  ${BSLAM_ROS_LIBS} )

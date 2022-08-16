@@ -1,4 +1,4 @@
-/* This file was automatically generated during make process on Fri 11 Jan 16:43:00 CET 2019 */
+/* This file was automatically generated during make process on Di 16. Aug 13:45:21 CEST 2022 */
 /* All changes will be overwritten! */
 
 #ifndef _VERSION_INFO__H
@@ -6,11 +6,11 @@
 
 const char *versionStr = "";
 
-const char *buildDateStr = "2019-01-11 16:43:00 +0100";
+const char *buildDateStr = "2022-08-16 13:45:21 +0200";
 
-const char *commitHashStr = "218af37813f0cd72ffd737be2a1f32a1dd384d59";
-const char *commitDateStr = "2018-12-21 15:55:18 +0100";
+const char *commitHashStr = "214a8c5f09ced852b54e6f164c5c66cc8ed4a7a4";
+const char *commitDateStr = "2022-08-15 08:35:28 +0200";
 
-const char *branchNameStr = "master";
+const char *branchNameStr = "main";
 
 #endif /* _VERSION_INFO_H */
